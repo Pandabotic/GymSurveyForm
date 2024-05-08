@@ -1,0 +1,137 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gym Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Gym Survey Form</h1>
+    <p id="description"><em>Take a moment to fill out our survey</em></p>
+    <form method="post" id="survey-form">
+      <fieldset>
+      <label id="name-label"> Name 
+        <input id="name" type="text" required placeholder="Enter Your Full Name">
+      </label>
+      <label id="email-label">Email 
+        <input id="email" type="email" required placeholder="Enter Your Email"/>
+      </label>
+      <label id="number-label">Age
+        <input id="number" type="number" required placeholder="Age"min="13" max="120"/>
+      </label>
+      </fieldset>
+      <fieldset>
+      <label id="dropdown-label">How Often Do You Workout A Week?
+      <select id="dropdown">
+        <option value="">Select One</option>
+        <option value="1">1-2 Times</option>
+        <option value="2">3-4 Times</option>
+        <option value="3">5-6 Times</option>
+      </select>
+      </label>
+      </fieldset>
+      <fieldset>Which Gym Do You Go To?
+      <label id="gym-label">
+        <input id="gym"type="radio" value="Chuze" name="gym-name" class="inline"/> Chuze
+      </label>
+      <label id="gym-label">
+        <input id="gym"type="radio" value="24" name="gym-name" class="inline"/> 24 Hour Fitness
+      </label>
+      <label id="gym-label">
+        <input id="gym"type="radio" value="Golds" name="gym-name" class="inline"/> Golds Gym
+      </label>
+      </fieldset>
+      <fieldset>Which Muscle Group(s) Is Your Favorite?
+      <label id="strength-label"> 
+        <input id="strength" type="checkbox" value="arms" class="inline"/>Arms
+      </label>
+      <label id="strength-label">
+        <input id="strength" type="checkbox" value="legs" class="inline"/>Legs
+      </label>
+      <label id="strength-label">
+        <input id="strength" type="checkbox" value="chest" class="inline"/>Chest
+      </label>
+      <label id="strength-label">
+        <input id="strength" type="checkbox" value="back" class="inline"/> Back
+      </label>
+      <label id="strength-label"> 
+        <input id="strength" type="checkbox" value="shoulders" class="inline"/> Shoulders
+      </label>
+      </fieldset>
+      <textarea id="comments" name="comments" placeholder="Provide any additional comments..." rows="4" cols="30"></textarea>
+        <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  background-color: lightblue;
+  font-size: 18px;
+  font-family:'Poppins', sans-serif;
+  display: block;
+}
+
+h1, p {
+  text-align: center;
+  margin: 1em auto;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+  padding: 1rem 0;
+}
+
+label {
+  display:block;
+  margin: 0.5rem 0;
+}
+
+input, textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  border: none;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 50%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: white;
+  border-color: white;
+  min-width: 300px;
+}
+
+input, select {
+  min-height: 2em;
+}
+
+
+
+** end of undefined **
+
